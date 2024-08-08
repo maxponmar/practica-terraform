@@ -25,3 +25,13 @@ variable "tags" {
   description = "Tags del proyecto"
   type = map(string)
 }
+
+variable "sg_ssh_ingress_cidr" {
+  description = "CIDR for SSH ingress traffic"
+  type = string
+}
+
+variable "public_cidr" {
+  description = "CIDR for SSH ingress traffic"
+  type = string
+}

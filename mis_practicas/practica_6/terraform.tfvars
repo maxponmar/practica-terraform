@@ -10,3 +10,6 @@ tags = {
   "project" = "Practica 6"
   "IaC_version" = "5.61.0"
 }
+
+sg_ssh_ingress_cidr = "0.0.0.0/0"
+public_cidr = "0.0.0.0/0"

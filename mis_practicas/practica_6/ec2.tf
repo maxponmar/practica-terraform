@@ -5,4 +5,10 @@ resource "aws_instance" "public_instance" {
   tags = {
     Name = "public_instance"
   }
+  key_name = data.aws_key_pair.key.key_name
+  vpc_security_group_ids = [ aws_security_group.public_instance_sg.id ]
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
