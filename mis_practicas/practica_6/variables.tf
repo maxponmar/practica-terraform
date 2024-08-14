@@ -35,3 +35,8 @@ variable "public_cidr" {
   description = "CIDR for SSH ingress traffic"
   type = string
 }
+
+variable "ec2_specs" {
+  description = "Parámetros de la instancia"
+  type = map(string)
+}

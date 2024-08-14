@@ -13,3 +13,8 @@ tags = {
 
 sg_ssh_ingress_cidr = "0.0.0.0/0"
 public_cidr = "0.0.0.0/0"
+
+ec2_specs = {
+  "ami" = "ami-0fda60cefceeaa4d3"
+  "instance_type" : "t2.micro"
+}
