@@ -1,7 +1,7 @@
 variable "instancias" {
   type = set(string)
   description = "Nombre de las instancias"
-  default = [ "mysql", "apache", "jumpserver" ]
+  default = [ "apache" ]
 }
 
 resource "aws_instance" "public_instance" {

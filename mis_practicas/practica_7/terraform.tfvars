@@ -21,4 +21,6 @@ ec2_specs = {
   "instance_type" : "t2.micro"
 }
 
-enable_monitoring = true
+enable_monitoring = false
+
+ingress_ports_list = [ 22, 80, 443 ]
